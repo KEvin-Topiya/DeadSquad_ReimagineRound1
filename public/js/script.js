@@ -1,8 +1,8 @@
 //=============== Kishan code================
 var csr = document.querySelector("#cursor")
 document.addEventListener("mousemove",function(loc){
-    csr.style.left=loc.x-20+"px";
-    csr.style.top=loc.y-20+"px";
+    csr.style.left=loc.x-15+"px";
+    csr.style.top=loc.y-15+"px";
 })
 
 
