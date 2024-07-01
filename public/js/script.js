@@ -1,8 +1,8 @@
-//=============== Kishan code================
+//=============== Kishan code ================
 var csr = document.querySelector("#cursor")
 document.addEventListener("mousemove",function(loc){
-    csr.style.left=loc.x-15+"px";
-    csr.style.top=loc.y-15+"px";
+    csr.style.left=loc.x-30+"px";
+    csr.style.top=loc.y-30+"px";
 })
 gsap.to(".nav",{
     backgroundColor:"#FFFFFF00",
@@ -16,7 +16,6 @@ gsap.to(".nav",{
         end:"top -22%",
         scrub:2
     }
-
     }
 )
 
