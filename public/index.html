@@ -9,18 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"
 />
 </head>
-<body class="bg-gray-200" >
+<body class="bg-gray-200 scroll-smooth" >
     <div id="cursor" class="cursor h-7 w-7 bg-yellow-500 rounded-full fixed z-50 blur drop-shadow-sm duration-200"></div>
     
     <!-- navbar -->
     <nav class="nav bg-transparent z-10 fixed bg-white flex justify-between pr-8 items-center pl-8 w-full h-28">
         <div class="h-full"><img class="logo h-24 mt-2 pl-4" src="./assets/icon/BalajiWafers.svg"></div>
         <ul class="flex gap-8" >
-            <li><a href="#" class="font-bold font-ubantu text-xl">HOME</a></li>
-            <li><a href="#" class="font-bold font-ubantu text-xl">PRODUCTS</a></li>
-            <li><a href="#" class="font-bold font-ubantu text-xl">ABOUT</a></li>
-            <li><a href="#" class="font-bold font-ubantu text-xl">LATEST NEWS</a></li>
-            <li><a href="#" class="font-bold font-ubantu text-xl">CONTACT US</a></li>
+            <li><a href="#home" class="font-bold font-ubantu text-xl" >HOME</a></li>
+            <li><a href="#product" class="font-bold font-ubantu text-xl" >PRODUCTS</a></li>
+            <li><a href="#about" class="font-bold font-ubantu text-xl" >ABOUT</a></li>
+            <li><a href="#" class="font-bold font-ubantu text-xl" >LATEST NEWS</a></li>
+            <li><a href="#contact" class="font-bold font-ubantu text-xl" >CONTACT US</a></li>
         </ul>
         <ul class="flex gap-4">
             <li><a href="#" class="inline-block"><i class="ri-facebook-circle-fill blue ri-2x text-blue-800"> </i></a></li>
@@ -31,7 +31,7 @@
     </nav>
     
     <!-- Home -->
-    <section class="h-[100vh] ">
+    <section id="home" class="h-[100vh] ">
         <div class="h-[7rem] w-full"></div>
         <div class="flex">
             <div class="w-1/2 h-[calc(100vh-7rem)] bg-red-300"></div>
@@ -41,33 +41,29 @@
     </section >
     
     <!-- New Products -->
-    <section class="w-full h-[100vh] bg-blue-500">
+    <section id="newproduct" class="w-full h-[100vh] bg-blue-500">
         <div class="h-[7rem] w-full"></div>
         <h2 class=" w-full text-center font-ubantu text-lg">New Products</h2>
 
     </section>
 
-    <!-- Top Products -->
-    <section class="w-full h-[100vh] bg-yellow-500">
-        <div class="h-[7rem] w-full"></div>
-        <h2 class=" w-full text-center font-ubantu text-lg">Top Products</h2>
 
     </section>
 
     <!-- all products -->
-    <section class="w-full h-[100vh] bg-black-500">
+    <section id="product" class="w-full h-[100vh] bg-black-500">
         <div class="h-[7rem] w-full"></div>
         <h2 class=" w-full text-center font-ubantu text-lg">Products</h2>
     </section>
 
-    <section class="w-full h-[100vh] bg-green-500">
+    <section id="about" class="w-full h-[100vh] bg-green-500">
         <div class="h-[7rem] w-full"></div>
         <h2 class=" w-full text-center font-ubantu text-lg">About US</h2>
 
     </section>
 
     <!-- footer & contect us merge-->
-    <footer>
+    <footer id="contact" >
         <h2 class=" w-full text-center font-ubantu text-lg">Footer</h2>
     </footer>
 
