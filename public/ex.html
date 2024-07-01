@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner {
+            height: 100vh;
+            width: 100%;
+            /* overflow: hidden; */
+            text-align: center;
+            position: relative;
+        }
+
+        .banner .slider {
+            position: absolute;
+            width: 200px;
+            height: 250px;
+            top: 10%;
+            left: calc(50% - 100px);
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+
+        }
+
+        .banner .slider .item {
+            position: absolute;
+            inset: 0 0 0 0;
+            transform:
+            rotateY(calc( (var(--item) - 1) * (360 / var(--qty)) * 1deg))
+            translateZ(550px);
+        }
+
+        .banner .slider .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        @keyframes rotate {
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+
+        <div class="slider" style="--qty:6">
+            <div class="item" style="--item:1"><img src="./assets/products/T_Wafers_CreamOnion_Middle-1.png"></div>
+            <div class="item" style="--item:2"><img src="./assets/products/T_Wafers_CrunchemChaatChaska_Middle.png"></div>
+            <div class="item" style="--item:3"><img src="./assets/products/T_Wafers_CrunchexChilliTadka_Middle.png"></div>
+            <div class="item" style="--item:4"><img src="./assets/products/T_Wafers_RumblesPudina_Middle.png"></div>
+            <div class="item" style="--item:5"><img src="./assets/products/T_Namkeen_PopRingsMasala_Middle.png"></div>
+            <div class="item" style="--item:6"><img src="./assets/products/T_Wafers_CrunchexSimplySalted_Middle.png">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
