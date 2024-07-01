@@ -17,3 +17,18 @@
     font-family: ubantu;
     src: url(../public/assets/fonts/Ubuntu-Regular.ttf);
 }
+
+.active{
+    position: relative;
+}
+.active::after{
+    content: '';
+    transition: .5s;
+    position: absolute;
+    bottom:-10px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    left:0;
+    
+    
+}
