@@ -31,3 +31,24 @@ gsap.to(".nav",{
 // Renish Code
 
 // End Renish
+
+//kevin
+const sections = document.querySelectorAll('section');
+const menuItems = document.querySelectorAll('nav ul li a');
+let currentSection = '';
+window.addEventListener('scroll', () => {
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (pageYOffset >= sectionTop - 50) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    menuItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === '#' + currentSection) {
+            item.classList.add('active');
+        }
+    });
+});
