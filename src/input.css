@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 
+
+
 @font-face {
     font-family: f1;
     src: url(../public/assets/fonts/ArcherPro-Book.otf);
@@ -17,6 +19,10 @@
     font-family: ubantu;
     src: url(../public/assets/fonts/Ubuntu-Regular.ttf);
 }
+@font-face {
+    font-family: inika;
+    src: url(../public/assets/fonts/Inika-Regular.ttf);
+}
 
 .active{
     position: relative;
@@ -28,7 +34,6 @@
     bottom:-10px;
     border-bottom: 2px solid black;
     width: 100%;
-    left:0;
-    
-    
+    left:0;   
 }
+
