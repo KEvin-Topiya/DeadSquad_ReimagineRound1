@@ -682,6 +682,14 @@ video {
   height: calc(100vh - 95px);
 }
 
+.h-16 {
+  height: 4rem;
+}
+
+.h-\[85px\] {
+  height: 85px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
