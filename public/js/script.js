@@ -32,7 +32,7 @@ gsap.to(".logo",{
 
 gsap.to(".pd",{
     rotate:24,
-    duration:1,
+    duration:0.7,
     scrollTrigger:{
         trigger:".pd",
         scroller:"body",
