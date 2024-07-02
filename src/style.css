@@ -889,6 +889,10 @@ video {
   font-size: 4rem;
 }
 
+.text-\[4em\] {
+  font-size: 4em;
+}
+
 .font-black {
   font-weight: 900;
 }
