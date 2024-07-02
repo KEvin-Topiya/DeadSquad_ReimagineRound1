@@ -29,6 +29,17 @@ gsap.to(".logo",{
     }
     }
 )
+gsap.to(".pd",{
+    rotate:24,
+    duration:1,
+    scrollTrigger:{
+        trigger:".pd",
+        scroller:"body",
+        start:"top 22%",
+        end:"top 20%",
+        scrub:2
+    }
+})
 
 
 
