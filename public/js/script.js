@@ -50,7 +50,6 @@ gsap.to(".title-product",{
     scrollTrigger:{
         trigger:".title-product",
         scroller:"body",
-        markers:true,
         start:"top 60%",
         end:"top 57%",
         scrub:2
