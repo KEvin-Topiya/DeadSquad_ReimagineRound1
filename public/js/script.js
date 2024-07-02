@@ -29,18 +29,7 @@ gsap.to(".logo",{
     }
     }
 )
-gsap.to(".",{
-    height:76,
-    duration:1,
-    scrollTrigger:{
-        trigger:".nav",
-        scroller:"body",
-        start:"top -20%",
-        end:"top -22%",
-        scrub:2
-    }
-    }
-)
+
 
 
 // End Kishan
