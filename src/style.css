@@ -662,6 +662,26 @@ video {
   height: 85%;
 }
 
+.h-\[70px\] {
+  height: 70px;
+}
+
+.h-\[150px\] {
+  height: 150px;
+}
+
+.h-\[130px\] {
+  height: 130px;
+}
+
+.h-\[95px\] {
+  height: 95px;
+}
+
+.h-\[calc\(100vh-95px\)\] {
+  height: calc(100vh - 95px);
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -733,6 +753,10 @@ video {
 
 .w-\[85\%\] {
   width: 85%;
+}
+
+.w-\[calc\(100vh-95px\)\] {
+  width: calc(100vh - 95px);
 }
 
 .-rotate-12 {
