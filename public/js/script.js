@@ -68,7 +68,7 @@ const color=[
         color1:"#8AC926",
         color2:"#B3DD6F",
         color3:"#D8FBA2",
-        html:"<p class='ptext font-f1 text-[]'>CREAMY  <b class='font-black'>FUN</b><br/>&nbsp;WITH <b>ONION</b> MASALA </p></div>"
+        html:"<p class='ptext font-f1 text-[]'>CREAMY  <b class='font-black'>FUN</b><br/>WITH <b>ONION</b> MASALA </p></div>"
     },
     {//blue
         url:"url('./assets/NewProducts/masalmasti.png')",
@@ -76,7 +76,7 @@ const color=[
         color1:"#3A86FF",
         color2:"#65A0FF",
         color3:"#BAD5FF",
-        html:" <p class='ptext font-f1 text-[]'>MASALA ZING FOR YOU <br/>&nbsp;<b>TEA TIME CONVERSITION</b></p></div> "
+        html:" <p class='ptext font-f1 text-[]'>MASALA ZING FOR YOU <br/><b>TEA TIME CONVERSITION</b></p></div> "
     },
     {//yellow
         url:"url('./assets/NewProducts/chatchaska.png')",
@@ -84,7 +84,7 @@ const color=[
         color1:"#FFCA3A",
         color2:"#FBD775",
         color3:"#FEE397",
-        html:" <p class='ptext font-f1 text-[]'>CHATPATA <b class='font-black'> GOSSIP</b> &<br/>&nbsp;CHATPATA <b>NIMBU</b></p></div>"
+        html:" <p class='ptext font-f1 text-[]'>CHATPATA <b class='font-black'> GOSSIP</b> &<br/>CHATPATA <b>NIMBU</b></p></div>"
     },
    
 ]
