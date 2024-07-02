@@ -5,10 +5,9 @@ document.addEventListener("mousemove",function(loc){
     csr.style.top=loc.y-10+"px";
 })
 gsap.to(".nav",{
-    backgroundColor:"#FFFFFF00",
+    backgroundColor:"rgba(255,255,255,0.7)",
     height:95,
     duration:1,
-    color:"#fff",
     scrollTrigger:{
         trigger:".nav",
         scroller:"body",
