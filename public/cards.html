@@ -45,12 +45,19 @@
         }
         
         .circle{
+            justify-content: center;
+            align-items: center;
+            display: flex;
             border-radius: 50%;
             background-color: rebeccapurple;
-            height: 175px;
-            width:175px;
+            height: 160px;
+            width:160px;
             z-index: 999;
             margin-top: 3vw;
+        }
+        .circle img{
+            scale: 1.4;
+            
         }
        
     </style>
@@ -61,13 +68,16 @@
 <body>
     <div id="cards" class="cards">
         <div class="card">
-            <div class="circle"></div>
+            <div class="circle"><img src="./assets/products/T_Wafers_MasalaMasti_Middle-1.png" alt=""></div>
         </div>
         <div class="card">
-            <div class="circle"></div>
+            <div class="circle"><img src="./assets/products/T_Wafers_TomatoTwist_Middle.png" alt=""></div>
         </div>
         <div class="card">
-            <div class="circle"></div>
+            <div class="circle"><img src="./assets/products/T_Wafers_SimplySalted_Middle-2.png" alt=""></div>
+        </div>
+        <div class="card">
+            <div class="circle"><img src="./assets/products/T_Wafers_CrunchemChaatChaska_Middle.png" alt=""></div>
         </div>
     </div>
 </body>
