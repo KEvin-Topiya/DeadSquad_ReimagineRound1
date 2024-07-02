@@ -6,7 +6,31 @@ document.addEventListener("mousemove",function(loc){
 })
 gsap.to(".nav",{
     backgroundColor:"rgba(255,255,255,0.7)",
-    height:95,
+    height:85,
+    duration:1,
+    scrollTrigger:{
+        trigger:".nav",
+        scroller:"body",
+        start:"top -20%",
+        end:"top -22%",
+        scrub:2
+    }
+    }
+)
+gsap.to(".logo",{
+    height:76,
+    duration:1,
+    scrollTrigger:{
+        trigger:".nav",
+        scroller:"body",
+        start:"top -20%",
+        end:"top -22%",
+        scrub:2
+    }
+    }
+)
+gsap.to(".",{
+    height:76,
     duration:1,
     scrollTrigger:{
         trigger:".nav",
