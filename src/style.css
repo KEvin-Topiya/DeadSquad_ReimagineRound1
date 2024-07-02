@@ -779,6 +779,22 @@ video {
   background-color: rgb(153 27 27 / var(--tw-bg-opacity));
 }
 
+.bg-white\/\[\.50\] {
+  background-color: rgb(255 255 255 / .50);
+}
+
+.bg-white\/\[\.40\] {
+  background-color: rgb(255 255 255 / .40);
+}
+
+.bg-white\/\[\.30\] {
+  background-color: rgb(255 255 255 / .30);
+}
+
+.bg-white\/\[\.70\] {
+  background-color: rgb(255 255 255 / .70);
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -891,6 +907,23 @@ video {
   color: transparent;
 }
 
+.text-black\/\[\.50\] {
+  color: rgb(0 0 0 / .50);
+}
+
+.text-white\/\[\.50\] {
+  color: rgb(255 255 255 / .50);
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+.blur-sm {
+  --tw-blur: blur(4px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .drop-shadow-\[30px_30px_7px_rgba\(0\2c 0\2c 0\2c 25\%\)\] {
   --tw-drop-shadow: drop-shadow(30px 30px 7px rgba(0,0,0,25%));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -899,6 +932,12 @@ video {
 .drop-shadow-sm {
   --tw-drop-shadow: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur-sm {
+  --tw-backdrop-blur: blur(4px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition-transform {
