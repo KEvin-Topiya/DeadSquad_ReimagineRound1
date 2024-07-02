@@ -29,6 +29,7 @@ gsap.to(".logo",{
     }
     }
 )
+
 gsap.to(".pd",{
     rotate:24,
     duration:1,
@@ -37,6 +38,21 @@ gsap.to(".pd",{
         scroller:"body",
         start:"top 22%",
         end:"top 20%",
+        scrub:2
+    }
+})
+
+gsap.to(".title-product",{
+    opacity:1,
+    duration:2,
+    borderBottom:3,
+    paddingTop:5,
+    scrollTrigger:{
+        trigger:".title-product",
+        scroller:"body",
+        markers:true,
+        start:"top 60%",
+        end:"top 57%",
         scrub:2
     }
 })
