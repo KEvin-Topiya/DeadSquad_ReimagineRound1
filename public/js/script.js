@@ -76,7 +76,7 @@ const color=[
         color1:"#3A86FF",
         color2:"#65A0FF",
         color3:"#BAD5FF",
-        html:" <p class='ptext font-f1 text-[]'>MASALA ZING FOR YOU <br/><b>TEA TIME CONVERSITION</b></p></div> "
+        html:" <p class='ptext font-f1 text-[]'>MASALA ZING FOR YOU <br/><b class='whitespace-pre'>TEA TIME CONVERSITION</b></p></div> "
     },
     {//yellow
         url:"url('./assets/NewProducts/chatchaska.png')",
