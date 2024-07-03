@@ -56,7 +56,7 @@
      backdrop-filter: blur( 10px );
      transform:
      rotateY(calc( (var(--item) - 1) * (360 / var(--qty)) * 1deg))
-     translateZ(350px);
+     translateZ(400px);
  }
  .item img:hover{
      scale:130%;

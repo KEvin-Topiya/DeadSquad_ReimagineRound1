@@ -691,6 +691,34 @@ video {
   width: 100%;
 }
 
+.w-\[4rem\] {
+  width: 4rem;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-\[20\%\] {
+  width: 20%;
+}
+
+.w-\[15\%\] {
+  width: 15%;
+}
+
+.w-\[10\%\] {
+  width: 10%;
+}
+
 .-rotate-12 {
   --tw-rotate: -12deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -726,6 +754,14 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .overflow-x-hidden {
@@ -840,6 +876,11 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -862,6 +903,10 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .pb-1 {
@@ -990,6 +1035,14 @@ video {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -998,6 +1051,10 @@ video {
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @font-face {
@@ -1058,7 +1115,7 @@ video {
           backdrop-filter: blur( 10px );
   transform:
      rotateY(calc( (var(--item) - 1) * (360 / var(--qty)) * 1deg))
-     translateZ(350px);
+     translateZ(400px);
 }
 
 .item img:hover{
