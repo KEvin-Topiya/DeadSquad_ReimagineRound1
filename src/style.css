@@ -1012,6 +1012,41 @@ video {
   background-color: rgb(250 204 21 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#fdf5c3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(253 245 195 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff6be\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 246 190 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff666\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 246 102 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fffaaa\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 170 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fffab7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 250 183 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff9ac\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 249 172 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fff3ac\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 243 172 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
