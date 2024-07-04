@@ -658,6 +658,14 @@ video {
   margin-top: 5vh;
 }
 
+.mt-\[2vh\] {
+  margin-top: 2vh;
+}
+
+.mt-\[3vh\] {
+  margin-top: 3vh;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -886,6 +894,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-x-hidden {
