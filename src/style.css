@@ -1184,6 +1184,14 @@ video {
   font-size: 5vh;
 }
 
+.text-\[8vh\] {
+  font-size: 8vh;
+}
+
+.text-\[9vh\] {
+  font-size: 9vh;
+}
+
 .font-black {
   font-weight: 900;
 }
