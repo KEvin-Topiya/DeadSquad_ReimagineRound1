@@ -775,6 +775,10 @@ video {
   width: 24%;
 }
 
+.w-\[70vh\] {
+  width: 70vh;
+}
+
 .max-w-\[25\%\] {
   max-width: 25%;
 }
