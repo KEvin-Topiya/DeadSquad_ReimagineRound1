@@ -823,6 +823,18 @@ video {
   width: 18vw;
 }
 
+.w-\[30vh\] {
+  width: 30vh;
+}
+
+.w-\[10vh\] {
+  width: 10vh;
+}
+
+.w-\[20vh\] {
+  width: 20vh;
+}
+
 .max-w-\[25\%\] {
   max-width: 25%;
 }
@@ -1154,6 +1166,10 @@ video {
 
 .text-\[3vh\] {
   font-size: 3vh;
+}
+
+.text-\[5vh\] {
+  font-size: 5vh;
 }
 
 .font-black {
