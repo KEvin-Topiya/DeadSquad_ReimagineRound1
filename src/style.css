@@ -1088,6 +1088,14 @@ video {
   line-height: 1;
 }
 
+.text-\[10vh\] {
+  font-size: 10vh;
+}
+
+.text-\[1vh\] {
+  font-size: 1vh;
+}
+
 .font-black {
   font-weight: 900;
 }
