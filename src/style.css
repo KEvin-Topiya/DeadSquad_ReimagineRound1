@@ -654,6 +654,10 @@ video {
   margin-top: .5rem;
 }
 
+.mt-\[5vh\] {
+  margin-top: 5vh;
+}
+
 .inline-block {
   display: inline-block;
 }
@@ -720,6 +724,18 @@ video {
 
 .h-\[70vh\] {
   height: 70vh;
+}
+
+.h-\[7vh\] {
+  height: 7vh;
+}
+
+.h-\[15vh\] {
+  height: 15vh;
+}
+
+.h-\[12vh\] {
+  height: 12vh;
 }
 
 .w-2\/3 {
