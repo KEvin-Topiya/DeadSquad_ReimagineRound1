@@ -13,7 +13,6 @@
             position: relative;
             height: 15vw;
             width: 12vw;
-            background-color: rgba(0, 0, 0, 0.812);
             box-shadow: 5px 5px 5px rgb(128, 128, 128);
             margin:.5rem 1vw;
         }
@@ -31,7 +30,6 @@
         }
          .pcard::before{
             content: var(--name);
-            color: white;
             position: absolute;
             bottom:0px;
             text-align: center;
@@ -64,7 +62,7 @@
 
     </style>
 </head>
-<body class=bg-[#f0f0f0] overflow-x-hidden selection:bg-black selection:text-yellow-400" >
+<body class="bg-[#f0f0f0] text-green-800 overflow-x-hidden selection:bg-black selection:text-yellow-400" >
     <div id="cursor" class="cursor h-8 w-8 rounded-full fixed z-50 border-2 border-red-600  drop-shadow-sm duration-200 pointer-events-none "></div>
     <!-- navbar -->
     <nav class="nav bg-white/[.70] shadow-lg z-10 fixed backdrop-blur-md flex justify-between pr-8 items-center pl-8 w-full  h-[95px]">
@@ -124,7 +122,7 @@
     <!-- all products -->
     <section id="product" class="w-full h-[100vh] ">
         <div class="h-[7rem] w-full"></div>
-        <h2 class=" m-auto w-fit p-2 text-center font-ubantu text-amber-800  text-6xl mb-5"><u>Products</u></h2>
+        <h2 class=" m-auto w-fit p-2 text-center font-ubantu text-6xl mb-5"><u>Products</u></h2>
 
         <div class="flex h-[80%] p-7 w-[80%] m-auto   justify-around flex-wrap">
             <div style="--name:'Cream And Onion'" class="pcard" ><i  onclick="tfill(this)"  class="hover:text-red-500 hrt ri-heart-line  absolute  right-4 top-4 text-white z-10"></i><img src="assets/NewProducts/c&o.png"></div>
