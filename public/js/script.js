@@ -71,26 +71,46 @@ gsap.to(".title-product",{
 // End Renish
 
 //kevin
+const bdy=document.body
 const sections = document.querySelectorAll('section');
 const menuItems = document.querySelectorAll('nav ul li a');
 let currentSection = '';
-window.addEventListener('scroll', () => {
-    
+document.addEventListener('scroll', () => {
+  
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (pageYOffset >= sectionTop - 50) {
             currentSection = section.getAttribute('id');
         }
     });
-
+    
     menuItems.forEach(item => {     
         item.classList.remove('active');
         if (item.getAttribute('href') === '#' + currentSection) {
             item.classList.add('active');
         }
     });
+    // effect()
 });
 
+window.addEventListener('scrollend',()=>{
+    
+})
+
+const effect=()=>   {
+    // alert("hello")
+//     const scrollY = window.scrollY;
+//     const maxScroll = document.body.scrollHeight - window.innerHeight;
+//     const scrollFraction = scrollY / maxScroll;
+    
+//     if (scrollY > 0) {
+//         document.body.style.perspective = `${1000 - scrollFraction * 500}px`;
+//         document.body.style.transform = `scale(${1 - scrollFraction * 0.1})`;
+//     } else {
+//         document.body.style.perspective = '1000px';
+//         document.body.style.transform = 'scale(1)';
+//     }
+}
 // aniamtion
 
 let cr1=document.querySelector('.cr1')
