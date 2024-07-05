@@ -75,8 +75,12 @@ const bdy=document.body
 const sections = document.querySelectorAll('section');
 const menuItems = document.querySelectorAll('nav ul li a');
 let currentSection = '';
+let scrol = true
+
+
 document.addEventListener('scroll', () => {
-  
+    handlescroll()
+
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
         if (pageYOffset >= sectionTop - 50) {
@@ -90,28 +94,9 @@ document.addEventListener('scroll', () => {
             item.classList.add('active');
         }
     });
-    // effect()
 });
 
-window.addEventListener('scrollend',()=>{
-    
-})
 
-const effect=()=>   {
-    // alert("hello")
-//     const scrollY = window.scrollY;
-//     const maxScroll = document.body.scrollHeight - window.innerHeight;
-//     const scrollFraction = scrollY / maxScroll;
-    
-//     if (scrollY > 0) {
-//         document.body.style.perspective = `${1000 - scrollFraction * 500}px`;
-//         document.body.style.transform = `scale(${1 - scrollFraction * 0.1})`;
-//     } else {
-//         document.body.style.perspective = '1000px';
-//         document.body.style.transform = 'scale(1)';
-//     }
-}
-// aniamtion
 
 let cr1=document.querySelector('.cr1')
 let cr2=document.querySelector('.cr2')
@@ -175,11 +160,42 @@ setTimeout(() => {
     ptext.style.transform="translateX(0rem)";
 }, 500);
 
-
 packet.style.content=(color[x].url);
 if(x<color.length-1)x++;
 else x=0;
 }
 
 
-// .style.content="url('./assets/NewProducts/')"
+
+//scroll effect
+function handlescroll() {
+    if (scrol == true) {
+        let cs = '';
+        console.log("scrol")
+        sections.forEach(s => {
+            s.style.margin="5rem"
+            s.onclick = function () {
+                normal();
+                cs = s.getAttribute('id');
+                const offsetTop = s.offsetTop;
+                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+            }
+        })
+        bdy.style.transition = ".5s"
+
+        bdy.classList.add("scale-75")
+        scrol = false
+    }
+
+}
+function normal() {
+    bdy.classList.remove("scale-75")
+    bdy.style.transition = ".5s"
+    sections.forEach(s=>{
+        s.style.margin="unset"
+        bdy.style.transition = ".5s"
+    })
+    setTimeout(() => {
+        scrol = true
+    }, 700);
+}

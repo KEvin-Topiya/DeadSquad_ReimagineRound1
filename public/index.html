@@ -75,11 +75,10 @@
             transition: transform 0.3s ease, perspective 0.3s ease;
             perspective: 1000px;
         }
-
     </style>
 </head>
 
-<body class=" bg-[#fff3ac] overflow-x-hidden text-green-800  selection:bg-black selection:text-yellow-400">
+<body class=" bg-gray-200 overflow-x-hidden text-green-800  selection:bg-black selection:text-yellow-400">
     <div id="cursor"
         class="cursor h-8 w-8 rounded-full fixed z-50 border-2 border-red-600  drop-shadow-sm duration-200 pointer-events-none ">
     </div>
@@ -135,7 +134,7 @@
     </section>
 
     <!-- New Products -->
-    <section id="nproduct" class="w-full h-[100vh] overflow-hidden">
+    <section id="nproduct" class="bg-white w-full h-[100vh] overflow-hidden">
         <div class="h-[12vh] bg-transparent w-full"></div>
         <div class="w-full justify-center items-center flex">
             <h2
@@ -175,7 +174,7 @@
 
 
     <!-- all products -->
-    <section id="product" class="w-full h-[100vh] ">
+    <section id="product" class="bg-slate-100 w-full h-[100vh] ">
         <div class="h-[7rem] w-full"></div>
         <h2 class=" m-auto w-fit p-2 text-center font-ubantu text-[5vh] mb-5"><u>Products</u></h2>
 
@@ -214,15 +213,15 @@
     </section>
 
 
-    <section id="about" class="w-full h-[100vh]">
+    <section id="about" class="bg-yellow-100 w-full h-[100vh]">
         <div class="h-[7rem] w-full"></div>
-        <h2 class=" w-full text-center font-ubantu text-lg">About US</h2>
+        <h2 class=" w-full text-center font-ubantu text-[5vh]">About US</h2>
 
     </section>
 
     <!-- footer & contect us merge-->
     <footer id="contact">
-        <h2 class=" w-full text-center font-ubantu text-lg">Footer</h2>
+        <h2 class=" w-full text-center font-ubantu text-[5vh]">Footer</h2>
     </footer>
 
 
@@ -234,6 +233,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/script.js"></script>
     <script>
+
         function fill(e) {
             e.classList.remove("ri-heart-line")
             e.classList.add("ri-heart-fill")
@@ -245,28 +245,16 @@
             e.classList.add("ri-heart-line")
         }
         function tfill(e) {
-            let i = 0
             if (e.classList.contains("ri-heart-line")) {
                 fill(e)
-                i++;
             } else {
                 fillr(e)
-                i--;
             }
         }
-
-        document.addEventListener('scroll',()=>{
-        bdy.classList.add("scale-50")
         
-        bdy.style.transition=".5s"
-    })
-    document.addEventListener('scrollend',()=>{
-        setTimeout(() => {
-            bdy.style.transition=".5s"
-            bdy.classList.remove("scale-50")
-            
-        },500);
-    })
+        
+        
+       
     </script>
 </body>
 

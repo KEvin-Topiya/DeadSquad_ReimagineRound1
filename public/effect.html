@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +8,50 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
+
 <body class="bg-[#dddddd] overflow-x-hidden">
-    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
-    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
-    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
-    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
-    
+    <section id="s1" class="h-[100vh] bg-[#fffaaa] "></section>
+    <section id="s2" class="h-[100vh] bg-[#aaffc4] "></section>
+    <section id="s3" class="h-[100vh] bg-[#ffaaaa] "></section>
+    <section id="s4" class="h-[100vh] bg-[#aabeff] "></section>
+
 </body>
 
 <script>
-    const bdy=document.body;
+    const bdy = document.body;
+    const section = document.querySelectorAll('section')
+    let scrol = true
+    document.addEventListener('click', normal)
 
-    document.addEventListener('scroll',()=>{
-        bdy.classList.add("scale-50")
-        
-        bdy.style.transition=".5s"
-    })
-    document.addEventListener('scrollend',()=>{
+    document.addEventListener('scroll', handlescroll)
+
+    function handlescroll() {
+        if (scrol == true) {
+            let cs = '';
+            section.forEach(s => {
+                s.style.borderRadius = "20px";
+                s.onclick = function () {
+                    normal();
+                    cs = s.getAttribute('id');
+                    const offsetTop = s.offsetTop;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                }
+            })
+            bdy.style.transition = ".5s"
+
+            bdy.classList.add("scale-75")
+            scrol = false
+        }
+
+    }
+    function normal() {
+        console.log("nornal")
+        bdy.classList.remove("scale-75")
+        bdy.style.transition = ".5s"
         setTimeout(() => {
-            bdy.style.transition=".5s"
-            bdy.classList.toggle("scale-50")
-            
-        },500);
-    })
+            scrol = true
+        }, 700);
+    }
 </script>
+
 </html>
