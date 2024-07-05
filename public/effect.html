@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>effect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-[#dddddd] overflow-x-hidden">
+    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
+    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
+    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
+    <section class="h-[100vh] bg-[#fffaaa] mb-16 "></section>
+    
+</body>
+
+<script>
+    const bdy=document.body;
+
+    document.addEventListener('scroll',()=>{
+        bdy.classList.add("scale-50")
+        
+        bdy.style.transition=".5s"
+    })
+    document.addEventListener('scrollend',()=>{
+        setTimeout(() => {
+            bdy.style.transition=".5s"
+            bdy.classList.toggle("scale-50")
+            
+        },500);
+    })
+</script>
+</html>

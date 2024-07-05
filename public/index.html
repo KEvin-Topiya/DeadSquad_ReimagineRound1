@@ -254,6 +254,19 @@
                 i--;
             }
         }
+
+        document.addEventListener('scroll',()=>{
+        bdy.classList.add("scale-50")
+        
+        bdy.style.transition=".5s"
+    })
+    document.addEventListener('scrollend',()=>{
+        setTimeout(() => {
+            bdy.style.transition=".5s"
+            bdy.classList.remove("scale-50")
+            
+        },500);
+    })
     </script>
 </body>
 
