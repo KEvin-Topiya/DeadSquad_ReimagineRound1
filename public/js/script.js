@@ -168,34 +168,34 @@ else x=0;
 
 
 //scroll effect
-function handlescroll() {
-    if (scrol == true) {
-        let cs = '';
-        console.log("scrol")
-        sections.forEach(s => {
-            s.style.margin="5rem"
-            s.onclick = function () {
-                normal();
-                cs = s.getAttribute('id');
-                const offsetTop = s.offsetTop;
-                window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-            }
-        })
-        bdy.style.transition = ".5s"
+// function handlescroll() {
+//     if (scrol == true) {
+//         let cs = '';
+//         console.log("scrol")
+//         sections.forEach(s => {
+//             s.style.margin="5rem"
+//             s.onclick = function () {
+//                 normal();
+//                 cs = s.getAttribute('id');
+//                 const offsetTop = s.offsetTop;
+//                 window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+//             }
+//         })
+//         bdy.style.transition = ".5s"
 
-        bdy.classList.add("scale-75")
-        scrol = false
-    }
+//         bdy.classList.add("scale-75")
+//         scrol = false
+//     }
 
-}
-function normal() {
-    bdy.classList.remove("scale-75")
-    bdy.style.transition = ".5s"
-    sections.forEach(s=>{
-        s.style.margin="unset"
-        bdy.style.transition = ".5s"
-    })
-    setTimeout(() => {
-        scrol = true
-    }, 700);
-}
+// }
+// function normal() {
+//     bdy.classList.remove("scale-75")
+//     bdy.style.transition = ".5s"
+//     sections.forEach(s=>{
+//         s.style.margin="unset"
+//         bdy.style.transition = ".5s"
+//     })
+//     setTimeout(() => {
+//         scrol = true
+//     }, 700);
+// }
