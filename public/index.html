@@ -173,7 +173,7 @@
 
 
     <!-- all products -->
-    <section id="product" class="bg-slate-100 w-full h-[100vh] ">
+    <section id="product" class="bg-white w-full h-[100vh] ">
         <div class="h-[7rem] w-full"></div>
         <h2 class=" m-auto w-fit p-2 text-center font-ubantu text-[5vh] mb-5"><u>Products</u></h2>
 
@@ -250,7 +250,13 @@
                 fillr(e)
             }
         }
-        
+
+        document.addEventListener('scroll',()=>{
+            document.body.classList.add("scale-75")
+        })
+        document.addEventListener('scrollend',()=>{
+            document.body.classList.remove("scale-75")
+        })
         
         
        

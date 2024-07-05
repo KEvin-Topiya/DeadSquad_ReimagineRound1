@@ -79,7 +79,7 @@ let scrol = true
 
 
 document.addEventListener('scroll', () => {
-    handlescroll()
+    // handlescroll()
 
     sections.forEach(section => {
         const sectionTop = section.offsetTop;
