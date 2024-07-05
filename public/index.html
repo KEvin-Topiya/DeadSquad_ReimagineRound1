@@ -253,9 +253,12 @@
 
         document.addEventListener('scroll',()=>{
             document.body.classList.add("scale-75")
+            setTimeout(() => {
+                document.body.classList.remove("scale-75")
+                
+            }, 1000);
         })
         document.addEventListener('scrollend',()=>{
-            document.body.classList.remove("scale-75")
         })
         
         
