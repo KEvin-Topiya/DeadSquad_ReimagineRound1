@@ -126,26 +126,26 @@
     <section id="nproduct" class="bg-white w-full h-[100vh] overflow-hidden">
         <div class="h-[12vh] bg-transparent w-full"></div>
         <div class="w-full justify-center items-center flex">
-            <h2 class="title-product w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 text-green-800 opacity-0 pt-28 mt-[3vh]">New Arrivals</h2>
+            <h2 class="title-product w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 border-b-2 text-green-800 opacity-1 absolute mt-[3vh] mb-[3vh]">New Arrivals</h2>
         </div>
         <div class=" h-[70vh] p-4 mt-[5vh] w-full text-center flex items-center justify-center  ">
             <div class="slider flex  w-[80%]  rounded-2xl justify-around items-center" style="--qty:6">
                 <div class="w-[18vw] flex flex-col items-center transition-all hover:scale-110 hover:text-white hover:bg-[#50b69c]  rounded-md ">
-                    <img class="w-[20vh] hover:scale-105 hover:-translate-y-10 transition-transform  pshadow" src="assets/NewProducts/NEWPOPRING.png">
+                    <img class="w-[20vh] hover:scale-102 hover:-translate-y-5 transition-transform  pshadow" src="assets/NewProducts/NEWPOPRING.png">
                     <p class="text-[4vh] mt-8 ">Shapes Popring<br>
                     <p>New Popring with carzy and fun shape</p>
                     <pre><br></pre><b class="text-[3vh]">10₹</b></p>
                 </div>
                 <div
                     class="w-[18vw] flex flex-col items-center transition-all hover:scale-110 hover:text-white hover:bg-[#31a9cc]  rounded-md ">
-                    <img class="w-[20vh] hover:scale-105 hover:-translate-y-10 transition-transform  pshadow" src="assets/NewProducts/NEWNACHOS.png">
+                    <img class="w-[20vh] hover:scale-102 hover:-translate-y-5 transition-transform  pshadow" src="assets/NewProducts/NEWNACHOS.png">
                     <p class="text-[4vh] mt-8 ">Salted Nachoos<br>
                     <p>Nachhos with salty tingles</p>
                     <pre><br></pre><b class="text-[3vh]">10₹</b></p>
                 </div>
                 <div
                     class="w-[18vw] flex flex-col items-center transition-all hover:scale-110 hover:text-white hover:bg-[#ca4730]  rounded-md mt-[.5rem]">
-                    <img class="w-[20vh] hover:scale-105 hover:-translate-y-10 transition-transform  pshadow" src="assets/NewProducts/newgippihot.png">
+                    <img class="w-[20vh] hover:scale-102 hover:-translate-y-5 transition-transform  pshadow" src="assets/NewProducts/newgippihot.png">
                     <p class="text-[4vh] mt-8  ">Famingchilli Gippi<br>
                     <p>New Hot and Falming Spicy gippy </p>
                     <pre><br></pre><b class="text-[3vh]">10₹</b></p>
@@ -156,11 +156,13 @@
 
 
     <!-- all products -->
-    <section id="product" class="bg-white w-full h-[100vh] ">
-        <div class="h-[7rem] w-full"></div>
-        <h2 class=" m-auto w-fit p-2 text-center font-ubantu text-[5vh] mb-5"><u>Products</u></h2>
+    <section id="product" class="bg-white w-full h-[100vh] overflow-hidden">
+        <div class="h-[12vh] bg-transparent w-full"></div>
+        <div class="w-full justify-center items-center flex">
+            <h2 class="title-all w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 border-b-2 text-green-800 opacity-1 absolute mt-[3vh] mb-[3vh]">Our Products</h2>
+        </div>
 
-        <div class="flex h-[80%] p-7 w-[80%] m-auto   justify-around flex-wrap">
+        <div class="prod-container flex h-[80%] p-7 w-[80%] m-auto justify-around flex-wrap">
             <div style="--name:'Cream And Onion'" class="pcard"><i onclick="tfill(this)" class="hover:text-red-500 hrt ri-heart-line  absolute  right-4 top-4  z-10"></i>
                 <img src="assets/NewProducts/c&o.png">
             </div>
@@ -203,10 +205,11 @@
         </div>
     </section>
 
-    <section id="about" class="bg-yellow-100 w-full h-[100vh]">
-        <div class="h-[7rem] w-full"></div>
-        <h2 class=" w-full text-center font-ubantu text-[5vh]">About US</h2>
-
+    <section id="about" class="bg-white w-full h-[100vh]">
+        <div class="h-[12vh] bg-transparent w-full"></div>
+        <div class="w-full justify-center items-center flex">
+            <h2 class="title-about w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 border-b-2 text-green-800 opacity-1 absolute mt-[3vh] mb-[3vh]">About Balaji</h2>
+        </div>
     </section>
 
     <!-- footer & contect us merge-->
@@ -238,15 +241,15 @@
             }
         }
 
-        document.addEventListener('scroll',()=>{
-            document.body.classList.add("scale-95")
-            setTimeout(() => {
-                document.body.classList.remove("scale-95")
+        // document.addEventListener('scroll',()=>{
+        //     document.body.classList.add("scale-95")
+        //     setTimeout(() => {
+        //         document.body.classList.remove("scale-95")
                 
-            }, 800);
-        })
-        document.addEventListener('scrollend',()=>{
-        })
+        //     }, 800);
+        // })
+        // document.addEventListener('scrollend',()=>{
+        // })
     </script>
 </body>
 </html>

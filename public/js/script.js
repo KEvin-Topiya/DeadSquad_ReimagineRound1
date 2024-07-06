@@ -42,16 +42,66 @@ gsap.to(".pd",{
     }
 })
 
-gsap.to(".title-product",{
-    opacity:1,
-    duration:2,
-    borderBottom:3,
-    paddingTop:5,
+
+gsap.from(".title-product",{
+    opacity:0,
+    duration:3,
+    y:90,
     scrollTrigger:{
-        trigger:".title-product",
+        trigger:"#nproduct",
         scroller:"body",
         start:"top 60%",
         end:"top 57%",
+        scrub:2
+    }
+})
+
+gsap.from(".slider",{
+    opacity:0,
+    duration:3,
+    y:100,
+    scrollTrigger:{
+        trigger:"#nproduct",
+        scroller:"body",
+        start:"top 50%",
+        end:"top 47%",
+        scrub:2
+    }
+})
+
+gsap.from(".title-all",{
+    opacity:0,
+    duration:2,
+    y:100,
+    scrollTrigger:{
+        trigger:".title-all",
+        scroller:"body",
+        start:"top 70%",
+        end:"top 67%",
+        scrub:2,
+    }
+})
+gsap.from(".prod-container",{
+    opacity:0,
+    duration:2,
+    y:100,
+    scrollTrigger:{
+        trigger:".prod-container",
+        scroller:"body",
+        start:"top 70%",
+        end:"top 67%",
+        scrub:2
+    }
+})
+gsap.from(".title-about",{
+    opacity:0,
+    duration:2,
+    y:100,
+    scrollTrigger:{
+        trigger:".title-about",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 77%",
         scrub:2
     }
 })
