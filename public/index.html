@@ -71,8 +71,8 @@
         }
 
         body {
-            transition: transform 0.3s ease, perspective 0.3s ease;
-            perspective: 1000px;
+            transition: transform 1s ease, perspective 1s ease;
+            perspective: 1500px;
         }
     </style>
 </head>
@@ -239,9 +239,9 @@
         }
 
         document.addEventListener('scroll',()=>{
-            document.body.classList.add("scale-75")
+            document.body.classList.add("scale-95")
             setTimeout(() => {
-                document.body.classList.remove("scale-75")
+                document.body.classList.remove("scale-95")
                 
             }, 800);
         })

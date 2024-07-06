@@ -130,7 +130,6 @@ const color=[
         color3:"#FEE397",
         html:" <p class='ptext font-f1 text-[]'>CHATPATA <b class='font-black'> GOSSIP</b> &<br/>CHATPATA <b>NIMBU</b></p></div>"
     },
-   
 ]
 
 const myTimeout = setInterval(anim1, 4000);
