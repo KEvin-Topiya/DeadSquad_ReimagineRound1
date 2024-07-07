@@ -117,6 +117,18 @@ gsap.from(".timeline",{
         scrub:2
     }
 })
+gsap.from(".about-balaji",{
+    opacity:0,
+    duration:2,
+    y:100,
+    scrollTrigger:{
+        trigger:".about-balaji",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 77%",
+        scrub:2
+    }
+})
 
 
 

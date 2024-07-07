@@ -1436,6 +1436,17 @@ video {
   }
 }
 /* ------------------------------------------ */
+.about-balaji{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+}
+.about-balaji h2{
+    width:75vw;
+    text-align: center;
+}
 .desc{
   display: flex;
   justify-content: center;
@@ -1444,7 +1455,7 @@ video {
 }
 
 .timeline{
-  margin-top: 8vh;
+  margin-top: 7vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1522,18 +1533,26 @@ video {
   display: none;
   margin: 4vh;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: center;
+
 }
 
 .text-content {
+  background-color: #272724;
+  border-radius: 2vw;
+  padding: 2vw;
+  color:white;
+  width:40vw;
+  margin-left: 10vw;
   font-size: 1.5vw;
   margin-right: 20px;
 }
 
 .image-content img {
-  width: 100px;
+  border-radius: 50%;
+  width: 25vw;
   height: auto;
+  
 }
 
 
