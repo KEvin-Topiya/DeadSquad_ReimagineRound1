@@ -9,7 +9,84 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="../src/style.css">
     <style>
-        
+        .timeline{
+            margin-top: 9vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vw;
+            color: #000;
+            font-weight: 400;
+            position: relative;
+        }
+        .dot{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .dot-left {
+            background-color: #166534;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+
+        .dot-right {
+            background-color:#166534;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+        .div-left{
+            margin-left:-7vw
+        }
+        .div-right{
+            margin-right: -5vw;
+        }
+
+        .div-right,
+        .div-left {
+            display: flex;
+            gap: 20px;
+            white-space: nowrap;
+            justify-content: center; /* Center items horizontally */
+            margin-top: 1vh; /* Adjust top margin */
+        }
+
+        .year-right,
+        .year-left {
+            font-family: Inria Serif, sans-serif;
+        }
+        .content {
+            display: none;
+            margin: 4vh;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .text-content {
+            font-size: 1.5vw;
+            margin-right: 20px;
+        }
+
+        .image-content img {
+            width: 100px;
+            height: auto;
+        }
+
+        @media (max-width: 991px) {
+            .div-right,
+            .div-left {
+                margin-top: 4vh;
+                white-space: initial;
+            }
+            .div-left{
+                margin-left: -7.3vw;
+            }
+            .div-right{
+                margin-right: -7.5vw;
+            }
+        }
     </style>
 </head>
 
@@ -63,29 +140,35 @@
     </section>
 
     <!-- New Products -->
-    <section id="nproduct" class="bg-white w-full h-[100vh] overflow-x-hidden">
+    <section id="nproduct" class="bg-white w-full h-[100vh] overflow-hidden">
         <div class="h-[100px]"></div>
         <div class="w-full  justify-center items-center mt-[5vh] flex">
             <h2 class="title-product w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 border-b-2 text-green-800 opacity-1   ">New Arrivals</h2>
         </div>
-        <div class=" w-[90%] m-auto p-[5vh] max-h-[calc(90vh-105px)] mt-4 overflow-auto flex flex-wrap justify-around items-center">
+        <div class=" w-[90%] m-auto p-[5vh]  mt-2 overflow-auto flex flex-wrap justify-around items-center">
             <div class="w-[32vh] p-4 flex flex-col items-center transition-all hover:scale-110 hover:text-white hover:bg-[#50b69c]  rounded-md ">
                 <img class="w-[20vh] hover:scale-102 hover:-translate-y-5 transition-transform  pshadow" src="assets/NewProducts/NEWPOPRING.png">
-                <p class="text-[4vh] mt-8 ">Shapes Popring<br>
-                <p>New Popring with carzy and fun shape</p>
-                <pre><br></pre><b class="text-[3vh]">10₹</b></p>
+                <div class="desc">
+                    <p class="text-[4vh] mt-8 ">Shapes Popring<br>
+                    <p>New Popring with carzy and fun shape</p>
+                    <pre><br></pre><b class="text-[3vh]">10₹</b></p>
+            </div>
             </div>
             <div class="w-[32vh] p-4 flex flex-col items-center transition-all hover:scale-110 hover:text-white hover:bg-[#31a9cc]  rounded-md ">
                 <img class="w-[20vh] hover:scale-102 hover:-translate-y-5 transition-transform  pshadow" src="assets/NewProducts/NEWNACHOS.png">
-                <p class="text-[4vh] mt-8 ">Salted Nachoos<br>
-                <p>Nachhos with salty tingles</p>
-                <pre><br></pre><b class="text-[3vh]">10₹</b></p>
+                <div class="desc">
+                    <p class="text-[4vh] mt-8 ">Salted Nachoos<br>
+                    <p>Nachhos with salty tingles</p>
+                    <pre><br></pre><b class="text-[3vh]">10₹</b></p>
+                </div>
             </div>
             <div class="w-[32vh] p-4 flex flex-col items-center transition-all hover:scale-110 hover:text-white hover:bg-[#ca4730]  rounded-md mt-[.5rem]">
                 <img class="w-[20vh] hover:scale-102 hover:-translate-y-5 transition-transform  pshadow" src="assets/NewProducts/newgippihot.png">
-                <p class="text-[4vh] mt-8  ">Famingchilli Gippi<br>
-                <p>New Hot and Falming Spicy gippy </p>
-                <pre><br></pre><b class="text-[3vh]">10₹</b></p>
+                <div class="desc">
+                    <p class="text-[4vh] mt-8">Famingchilli Gippi<br>
+                    <p>New Hot and Falming Spicy gippy </p>
+                    <pre><br></pre><b class="text-[3vh]">10₹</b></p>
+                </div>
             </div>
         </div>
     </section>
@@ -174,6 +257,70 @@
         <div class="w-full justify-center items-center flex">
             <h2 class="title-about w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 border-b-2 text-green-800 opacity-1 absolute mt-[3vh] mb-[3vh]">About Balaji</h2>
         </div>
+        <div class="timeline">
+            <div class="div-right" onclick="toggleContent('content-1974')">
+                <div class="dot"><div class="dot-right"></div></div>
+                <div class="year-right">1974</div>
+            </div>
+            <div id="content-1974" class="content">
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-1974.jpg" alt="Image 1974"></div>
+                <div class="text-content">Details about the year 1974.</div>
+            </div>
+    
+            <div class="div-left" onclick="toggleContent('content-1981')">
+                <div class="year-left">1981</div>
+                <div class="dot"><div class="dot-left"></div></div>
+            </div>
+            <div id="content-1981" class="content">
+                <div class="text-content">Details about the year 1981.</div>
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-1981.jpg" alt="Image 1981"></div>
+            </div>
+    
+            <div class="div-right" onclick="toggleContent('content-1989')">
+                <div class="dot"><div class="dot-right"></div></div>
+                <div class="year-right">1989</div>
+            </div>
+            <div id="content-1989" class="content">
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-1989.jpg" alt="Image 1989"></div>
+                <div class="text-content">Details about the year 1989.</div>
+            </div>
+    
+            <div class="div-left" onclick="toggleContent('content-1995')">
+                <div class="year-left">1995</div>
+                <div class="dot"><div class="dot-left"></div></div>
+            </div>
+            <div id="content-1995" class="content">
+                <div class="text-content">Details about the year 1995.</div>
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-1996.jpg" alt="Image 1995"></div>
+            </div>
+    
+            <div class="div-right" onclick="toggleContent('content-2002')">
+                <div class="dot"><div class="dot-right"></div></div>
+                <div class="year-right">2002</div>
+            </div>
+            <div id="content-2002" class="content">
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-2002.jpg" alt="Image 2002"></div>
+                <div class="text-content">Details about the year 2002.</div>
+            </div>
+    
+            <div class="div-left" onclick="toggleContent('content-2008')">
+                <div class="year-left">2008</div>
+                <div class="dot"><div class="dot-left"></div></div>
+            </div>
+            <div id="content-2008" class="content">
+                <div class="text-content">Details about the year 2008.</div>
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-2008.jpg" alt="Image 2008"></div>
+            </div>
+    
+            <div class="div-right" onclick="toggleContent('content-2015')">
+                <div class="dot"><div class="dot-right"></div></div>
+                <div class="year-right">2015</div>
+            </div>
+            <div id="content-2015" class="content">
+                <div class="image-content"><img src="./assets/about-us/ABOUT-US-2015.jpg" alt="Image 2015"></div>
+                <div class="text-content">Details about the year 2015.</div>
+            </div>
+        </div>
     </section>
 
     <!-- footer & contect us merge-->
@@ -251,7 +398,15 @@
             mnu.style.left="0%"
             }  
         } 
-
+        function toggleContent(contentId) {
+            var content = document.getElementById(contentId);
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "flex";
+            } else {
+                content.style.display = "none";
+            }
+        }
+        
         // document.addEventListener('scroll',()=>{
         //     document.body.classList.add("scale-95")
         //     setTimeout(() => {
