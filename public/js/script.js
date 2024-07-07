@@ -56,15 +56,15 @@ gsap.from(".title-product",{
     }
 })
 
-gsap.from(".slider",{
+gsap.from(".new",{
     opacity:0,
     duration:3,
     y:100,
     scrollTrigger:{
-        trigger:"#nproduct",
+        trigger:".new",
         scroller:"body",
-        start:"top 50%",
-        end:"top 47%",
+        start:"top 60%",
+        end:"top 57%",
         scrub:2
     }
 })
@@ -99,6 +99,18 @@ gsap.from(".title-about",{
     y:100,
     scrollTrigger:{
         trigger:".title-about",
+        scroller:"body",
+        start:"top 80%",
+        end:"top 77%",
+        scrub:2
+    }
+})
+gsap.from(".timeline",{
+    opacity:0,
+    duration:2,
+    y:100,
+    scrollTrigger:{
+        trigger:".timeline",
         scroller:"body",
         start:"top 80%",
         end:"top 77%",
