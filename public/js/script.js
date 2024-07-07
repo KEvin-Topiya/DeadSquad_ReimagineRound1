@@ -139,6 +139,7 @@ document.addEventListener('scroll', () => {
     });
     
     menuItems.forEach(item => {     
+        item.onclick=cls()
         item.classList.remove('active');
         if (item.getAttribute('href') === '#' + currentSection) {
             item.classList.add('active');
