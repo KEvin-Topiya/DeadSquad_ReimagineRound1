@@ -349,4 +349,5 @@
     footer span{
         position: unset !important;
     }
+    .cursor{display: none;}
 }
