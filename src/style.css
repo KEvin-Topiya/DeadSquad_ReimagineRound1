@@ -1529,13 +1529,14 @@ video {
       margin-right: -7.5vw;
   }
 }
-.content {
+.content-section {
   display: none;
   margin: 4vh;
   align-items: center;
   justify-content: center;
-
+  transition: 0.5s ease-in-out;
 }
+
 
 .text-content {
   background-color: #272724;
@@ -1552,6 +1553,7 @@ video {
   border-radius: 50%;
   width: 25vw;
   height: auto;
+  transition: all ease-in-out 2s;
   
 }
 
