@@ -226,8 +226,8 @@
         z-index: 1;
         top: 50%;
         transform: translateY(-50%);
-        height:180vw !important;
-        width: 180vw !important;
+        height:160vw !important;
+        width: 160vw !important;
     }
 
     .ptext {
