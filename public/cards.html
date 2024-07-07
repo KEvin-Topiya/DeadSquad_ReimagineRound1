@@ -1,146 +1,127 @@
 <!DOCTYPE html>
-        <html lang="en" class="text-[16px] scroll-smooth">
-        
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="icon" href="./assets/icon/balaji.png">
-            <script src="https://cdn.tailwindcss.com"></script>
-            <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
-            <link rel="stylesheet" href="../src/style.css">
-            <link rel="stylesheet" href="custom.css">
-            <style>
+<html lang="en" class="text-[16px] scroll-smooth">
 
-            .timeline{
-                padding-top:7vh;
-                position: relative;
-                margin:5vh 0;
-                padding: 0;
-                list-style: none;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icon/balaji.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../src/style.css">
+    <link rel="stylesheet" href="custom.css">
+    <style>
+        .div {
+            background-color: #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2vw;
+            color: #000;
+            font-weight: 400;
+            position: relative;
+        }
+
+        .div-11 {
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+            font-family: Inria Serif, sans-serif;
+            margin-top: 55px;
+        }
+
+        @media (max-width: 991px) {
+            .div-11 {
+                margin-top: 40px;
             }
-            .timeline::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                width: 4px;
-                background: #ddd;
-                left: 50%;
-                margin-left: -2px;
+        }
+        .dot{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .dot-left {
+            background-color: #d9d9d9;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+             /* Adjust vertical and horizontal margins */
+        }
+
+        .dot-right {
+            background-color: #d9d9d9;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+             /* Adjust vertical and horizontal margins */
+        }
+        .div-left{
+            margin-left:-7vw
+        }
+        .div-right{
+            margin-right: -5vw;
+        }
+
+        .div-right,
+        .div-left {
+            display: flex;
+            gap: 20px;
+            white-space: nowrap;
+            justify-content: center; /* Center items horizontally */
+            margin-top: 1vh; /* Adjust top margin */
+        }
+
+        .year-right,
+        .year-left {
+            font-family: Inria Serif, sans-serif;
+        }
+
+        @media (max-width: 991px) {
+            .div-right,
+            .div-left {
+                margin-top: 40px;
+                white-space: initial;
             }
-            
-            .tl-item {
-                margin: 0 0 20px;
-                padding: 0 20px;
-                position: relative;
-            }
-            
-            .tl-item::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 50%;
-                width: 20px;
-                height: 20px;
-                background: #fff;
-                border: 4px solid #007bff;
-                border-radius: 50%;
-                margin-left: -10px;
-                z-index: 1;
-            }
-            
-            .tl-item h3 {
-                margin: 0 0 10px;
-            }
-            
-            .tl-item p {
-                margin: 0;
-            }
-            
-            .tl-content {
-                background: #f7f7f7;
-                padding: 10px 20px;
-                border-radius: 5px;
-                position: relative;
-                left: 50%;
-                width: 45%;
-            }
-            
-            .tl-item:nth-child(even) .tl-content {
-                left: -55%;
-            }
-            </style>
-        </head>
-        
-        <body class=" bg-gray-200 overflow-x-hidden text-green-800  selection:bg-black selection:text-yellow-400">
-            <div id="cursor" class="cursor h-8 w-8 rounded-full fixed z-50 border-2 border-red-600  drop-shadow-sm duration-200 pointer-events-none ">
-            </div>
-            <!-- navbar -->
-            <nav class="nav bg-white/[.70] shadow-lg z-10 fixed backdrop-blur-md flex justify-between pr-8 items-center pl-8 w-full  h-[95px] ">
-                <div class="h-full"><img class="logo h-[85px] mt-1 pl-6" src="./assets/icon/BalajiWafers.svg"></div>
-                <ul class="flex gap-8 text-green-800">
-                    <li><a href="#home" class="font-bold font-ubantu text-xl">HOME</a></li>
-                    <li><a href="#product" class="font-bold font-ubantu text-xl">PRODUCTS</a></li>
-                    <li><a href="#about" class="font-bold font-ubantu text-xl">ABOUT</a></li>
-                    <li><a href="#" class="font-bold font-ubantu text-xl">LATEST NEWS</a></li>
-                    <li><a href="#contact" class="font-bold font-ubantu text-xl">CONTACT US</a></li>
-                </ul>
-                <ul class="flex gap-4">
-                    <li><a href="#" class="inline-block"><i class="ri-facebook-circle-fill blue ri-2x text-blue-800"> </i></a> </li>
-                    <li><a href="#" class="inline-block"><i class="ri-youtube-fill blue ri-2x  text-red-600"> </i></a></li>
-                    <li><a href="#" class="inline-block"><i class="ri-instagram-fill blue ri-2x bg-gradient-to-br from-blue-800 via-pink-700  to-red-500 text-transparent bg-clip-text"> </i></a></li>
-                </ul>
-        
-            </nav>
-        
-            <section id="about" class="bg-white w-full">
-                <div class="h-[12vh] bg-transparent w-full"></div>
-                <div class="w-full justify-center items-center flex">
-                    <h2 class="title-about w-fit text-center font-ubantu text-[5vh] font-extrabold border-green-950 border-b-2 text-green-800 opacity-1 absolute mt-[3vh] mb-[3vh]">About Balaji</h2>
-                </div>
-                <div id="timeline-container" class="timeline-container">
-                    <ul class="timeline" id="timeline">
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                        <li class="tl-item" id="tl-item">
-                            <div class="tl-content" id="tl-content">
-                                <h3>1974</h3>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </section>    
-        
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-            <script src="./js/script.js"></script>
-        </body>
-        </html>
+        }
+    </style>
+</head>
+
+<body class="bg-gray-200 overflow-x-hidden text-green-800 selection:bg-black selection:text-yellow-400">
+    <div id="cursor" class="cursor h-8 w-8 rounded-full fixed z-50 border-2 border-red-600 drop-shadow-sm duration-200 pointer-events-none">
+    </div>
+
+    <div class="div">
+        <div class="div-11">About Balaji</div>
+        <div class="div-right">
+            <div class="dot"><div class="dot-right"></div></div>
+            <div class="year-right">1974</div>
+        </div>
+        <div class="div-left">
+            <div class="year-left">1981</div>
+            <div class="dot"><div class="dot-left"></div></div>
+        </div>
+        <div class="div-right">
+            <div class="dot"><div class="dot-right"></div></div>
+            <div class="year-right">1989</div>
+        </div>
+        <div class="div-left">
+            <div class="year-left">1995</div>
+            <div class="dot"><div class="dot-left"></div></div>
+        </div>
+        <div class="div-right">
+            <div class="dot"><div class="dot-right"></div></div>
+            <div class="year-right">2002</div>
+        </div>
+        <div class="div-left">
+            <div class="year-left">2008</div>
+            <div class="dot"><div class="dot-left"></div></div>
+        </div>
+        <div class="div-right">
+            <div class="dot"><div class="dot-right"></div></div>
+            <div class="year-right">2015</div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
