@@ -1,90 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Timeline</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Twisted Pillar with Larger Cards</title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0;
+    }
+
+    .pillar {
+        position: relative;
+        width: 10px;
+        height: 300px;
+        background-color: #333;
+        margin: 0 auto;
+        transform-style: preserve-3d;
+        perspective: 1000px;
+    }
+
+    .fan-container {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform-style: preserve-3d;
+    }
+
+    .fan {
+        width: 100vw;
+        height: 260px;
+        background-color: #ccc;
+        border: 2px solid #666;
+        border-radius: 10px;
+        right:50%;
+        left: 50%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transform-origin: bottom center;
+        animation: rotateFan 6s linear infinite;
+    }
+
+    .fan:nth-child(odd) {
+        transform: rotateY(0deg);
+    }
+
+    .fan:nth-child(even) {
+        transform: rotateY(180deg);
+    }
+
+    @keyframes rotateFan {
+        0% {
+            transform: rotateY(0deg);
         }
-        .timeline {
-            width: 100%;
-            padding: 50px 0;
-            background-color: #fff;
-            display: flex;
-            justify-content: center;
+        100% {
+            transform: rotateY(360deg);
         }
-        .timeline-container {
-            width: 80%;
-            max-width: 1200px;
-            position: relative;
-            margin: 0 auto;
-        }
-        .timeline-item {
-            display: flex;
-            justify-content: flex-end;
-            padding: 10px 0;
-            position: relative;
-            width: 50%;
-            margin-right: 50%;
-        }
-        .timeline-item:nth-child(even) {
-            justify-content: flex-start;
-            margin-right: 0;
-            margin-left: 50%;
-        }
-        .timeline-date {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 50px;
-            position: absolute;
-            top: 10px;
-            right: -75px;
-        }
-        .timeline-item:nth-child(even) .timeline-date {
-            right: auto;
-            left: -75px;
-        }
-        .timeline-content {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            position: relative;
-        }
-        .timeline-content h2 {
-            margin-top: 0;
-        }
-        .timeline-item:nth-child(even) .timeline-content {
-            left: 0;
-        }
-    </style>
+    }
+</style>
 </head>
 <body>
-    <div class="timeline">
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-date">1982</div>
-                <div class="timeline-content">
-                    <h2>Our Beginnings</h2>
-                    <p>[Your Company Name] began its journey in 1982 with a vision to bring quality [product/service] to [location/market]. Founded by [Founder’s Name], our story started in a [humble location or situation], driven by a passion for [industry or mission].</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">1992</div>
-                <div class="timeline-content">
-                    <h2>First Major Expansion</h2>
-                    <p>By 1992, we expanded to [describe scale or new facilities]. Our dedication to [core value] enabled us to reach new milestones.</p>
-                </div>
-            </div>
-            <!-- Repeat for other years/milestones -->
-        </div>
+<div class="pillar">
+    <div class="fan-container">
+        <div class="fan"></div>
+        <div class="fan"></div>
     </div>
+</div>
 </body>
 </html>
