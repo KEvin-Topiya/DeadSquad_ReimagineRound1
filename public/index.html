@@ -304,23 +304,14 @@
             }  
         }
         function toggleContent(contentId) {
-            var content = document.getElementById(contentId);
-            if (content.style.display === "none" || content.style.display === "") {
-                content.style.display = "flex";
-            } else {
-                content.style.display = "none";
-            }
+            var contents = document.getElementsByClassName('content-section');
+            for (var i = 0; i < contents.length; i++) {
+                contents[i].style.display = 'none';
         }
-        
-        // document.addEventListener('scroll',()=>{
-        //     document.body.classList.add("scale-95")
-        //     setTimeout(() => {
-        //         document.body.classList.remove("scale-95")
-                
-        //     }, 800);
-        // })
-        // document.addEventListener('scrollend',()=>{
-        // })
+
+        var content = document.getElementById(contentId);
+        content.style.display = 'flex';
+}
     </script>
 </body>
 </html>
