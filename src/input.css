@@ -79,7 +79,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 1;
+    z-index: 10;
     height: 60%;
     filter: drop-shadow(5px 5px 10px rgba(247, 242, 242, 0.175));
 }
@@ -183,8 +183,6 @@
         text-align: center;
     }
 
-    nav ul {}
-
     nav ul li,
     nav ul li a {
         display: block;
@@ -235,5 +233,19 @@
         font-size: x-large !important;
         color: black;
     }
+    .ft{
+        flex-direction: column;
+    }
+    .fm{
+        justify-content: space-around;
+        width: 100%;
+    
+    }
+    .fm ul li ,.fm ul li a{
+        font-size:2vh !important;
+    }
 
+    footer span{
+        position: unset !important;
+    }
 }
